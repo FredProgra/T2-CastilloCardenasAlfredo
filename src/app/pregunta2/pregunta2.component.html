@@ -1,0 +1,22 @@
+<mat-card>
+    <mat-card-header>Pregunta2</mat-card-header>
+    <mat-card-content>
+        <div class="for">
+            <mat-form-field >
+                <mat-label>Ingrese Precio Unitario</mat-label>
+                <input matInput type="number" [(ngModel)]="pregunta2.precio">
+                
+            </mat-form-field>
+    <br>
+            <mat-form-field >
+                <mat-label>Ingrese su Cantidad</mat-label>
+                <input matInput type="number" [(ngModel)]="pregunta2.cantidad" >
+                
+            </mat-form-field>
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        
+        <button mat-raised-button (click)="calcularMonto()">Ingresar</button>
+    </mat-card-actions>
+</mat-card>
